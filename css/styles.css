@@ -269,6 +269,13 @@ footer {
   color: var(--muted);
 }
 
+.admin-notice {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
 @media (max-width: 720px) {
   .navbar {
     flex-direction: column;

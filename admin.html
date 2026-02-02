@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>管理员后台 | Lumina Models</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .admin-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .admin-header code {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .status-pill span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7ddc93;
+    }
+
+    .admin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .admin-card {
+      background: rgba(15, 20, 30, 0.85);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .admin-card h3 {
+      margin-top: 0;
+    }
+
+    .admin-card ol,
+    .admin-card ul {
+      padding-left: 20px;
+    }
+
+    .admin-form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .admin-form label {
+      display: grid;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .admin-form input,
+    .admin-form select,
+    .admin-form textarea {
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(10, 12, 18, 0.8);
+      color: #f7f7f7;
+      font-size: 14px;
+    }
+
+    .admin-form button {
+      justify-self: start;
+    }
+
+    .admin-note {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand">Lumina Models</div>
+      <nav class="language-switcher" aria-label="导航">
+        <a href="index.html">返回官网</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="admin-header">
+        <div>
+          <h1 class="section-title">管理员后台</h1>
+          <p class="admin-note">快速添加模特资料，安全性由服务端口令与 IP 白名单控制。</p>
+        </div>
+        <div class="status-pill"><span></span>Backend: active</div>
+      </div>
+
+      <div class="admin-grid">
+        <section class="admin-card">
+          <h3>添加新模特</h3>
+          <form class="admin-form" method="post" action="/admin/models">
+            <label>
+              后台口令
+              <input type="password" name="admin_key" placeholder="请输入 ADMIN_KEY" required />
+            </label>
+            <label>
+              姓名
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              价格（每小时）
+              <input type="text" name="price" placeholder="$320" required />
+            </label>
+            <label>
+              档期状态
+              <select name="availability" required>
+                <option value="available">可预约</option>
+                <option value="limited">名额有限</option>
+                <option value="unavailable">暂不可约</option>
+              </select>
+            </label>
+            <label>
+              描述
+              <textarea name="summary" rows="3" required></textarea>
+            </label>
+            <label>
+              标签（以逗号分隔）
+              <input type="text" name="tags" placeholder="派对, 晚宴" />
+            </label>
+            <button class="button" type="submit">提交资料</button>
+          </form>
+        </section>
+
+        <section class="admin-card">
+          <h3>快速启用方式</h3>
+          <ol>
+            <li>在服务器上设置 <code>ADMIN_KEY</code> 环境变量。</li>
+            <li>启动 <code>npm install && npm start</code>。</li>
+            <li>访问 <code>/admin</code> 并填写资料。</li>
+          </ol>
+          <p class="admin-note">所有提交会写入本地 <code>data/models.json</code>，仅服务器可读。</p>
+        </section>
+
+        <section class="admin-card">
+          <h3>安全建议</h3>
+          <ul>
+            <li>限制后台访问 IP（使用反向代理或防火墙）。</li>
+            <li>确保后台口令足够复杂并定期更换。</li>
+            <li>通过 HTTPS 访问后台地址。</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="contact-bar" aria-label="联系我们">
+    <a href="https://wechat.com" target="_blank" rel="noreferrer">微信</a>
+    <a href="https://wa.me/10000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+    <a href="https://line.me" target="_blank" rel="noreferrer">LINE</a>
+    <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+    <a href="tel:+10000000000">电话</a>
+  </div>
+</body>
+</html>
