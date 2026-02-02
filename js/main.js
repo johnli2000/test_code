@@ -41,3 +41,8 @@ if (bookingForm) {
     }
   });
 }
+
+const adminNotice = document.querySelector('.admin-notice');
+if (adminNotice && window.location.protocol === 'file:') {
+  adminNotice.textContent = '管理员入口：请通过服务器访问 /admin（本地文件模式不可用）';
+}
