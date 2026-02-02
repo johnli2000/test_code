@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumina Models | ホーム</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand">Lumina Models</div>
+      <nav class="language-switcher" aria-label="言語">
+        <a href="index.html">EN</a>
+        <a href="index-zh.html">中文</a>
+        <a href="index-ja.html" aria-current="page">日本語</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div class="hero-card">
+        <h1>上質な時間を提供する厳選プロフィール。</h1>
+        <p>モデル一覧・空き状況・予約フォームを一つの場所でご案内します。</p>
+        <a class="button" href="#models">利用可能なモデルを見る</a>
+      </div>
+      <div class="hero-card">
+        <h2>クイック予約</h2>
+        <p>ご希望の日時と滞在時間を入力いただければ、すぐに確認します。</p>
+        <a class="button" href="models/sweety.html">Sweety プロフィールへ</a>
+      </div>
+    </section>
+
+    <section id="models" class="section">
+      <div class="container">
+        <h2 class="section-title">モデル概要</h2>
+        <div class="controls">
+          <label class="toggle">
+            <input type="checkbox" data-availability-toggle />
+            空きありのみ表示
+          </label>
+        </div>
+        <div class="cards">
+          <article class="card" data-availability="available">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Sweety" loading="lazy" />
+            <div class="availability available">本日空きあり</div>
+            <h3>Sweety</h3>
+            <p>明るく上品で、ルーフトップやバーに最適です。</p>
+            <p><strong>料金:</strong> $320 / 時間〜</p>
+            <button class="toggle" data-toggle-profile="profile-sweety-ja">プロフィール表示</button>
+            <div class="profile-details" id="profile-sweety-ja">
+              <p><strong>言語:</strong> 英語、中国語</p>
+              <p><strong>エリア:</strong> 中心部</p>
+              <p><strong>特長:</strong> アートギャラリー、上質なディナー。</p>
+              <a class="button" href="models/sweety.html">詳細ページ</a>
+            </div>
+          </article>
+
+          <article class="card" data-availability="available">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Aria" loading="lazy" />
+            <div class="availability available">今週空きあり</div>
+            <h3>Aria</h3>
+            <p>洗練された雰囲気で、ショッピングやイベントに最適。</p>
+            <p><strong>料金:</strong> $350 / 時間〜</p>
+            <button class="toggle" data-toggle-profile="profile-aria-ja">プロフィール表示</button>
+            <div class="profile-details" id="profile-aria-ja">
+              <p><strong>言語:</strong> 英語、日本語</p>
+              <p><strong>エリア:</strong> ハーバー地区</p>
+              <p><strong>特長:</strong> ヨットディナー、文化ツアー。</p>
+              <a class="button" href="models/aria.html">詳細ページ</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="contact-bar" aria-label="連絡先">
+    <a href="https://wechat.com" target="_blank" rel="noreferrer">WeChat</a>
+    <a href="https://wa.me/10000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+    <a href="https://line.me" target="_blank" rel="noreferrer">LINE</a>
+    <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+    <a href="tel:+10000000000">電話</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="notice">予約・登録用メール: <strong>admin@luminamodels.example</strong></p>
+      <div class="hidden-links" aria-hidden="true">
+        <a href="intake/en.html">Model intake English</a>
+        <a href="intake/zh.html">Model intake 中文</a>
+        <a href="intake/ja.html">Model intake 日本語</a>
+        <a href="intake/ru.html">Model intake Русский</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

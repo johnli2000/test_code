@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Model Intake | English</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand">Lumina Models</div>
+      <nav class="language-switcher" aria-label="Language">
+        <a href="../index.html">EN</a>
+        <a href="../index-zh.html">中文</a>
+        <a href="../index-ja.html">日本語</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">New model intake form</h1>
+      <div class="form-card">
+        <form action="mailto:admin@luminamodels.example" method="post" enctype="text/plain">
+          <label>
+            Full name
+            <input type="text" name="Full name" required />
+          </label>
+          <label>
+            Age
+            <input type="number" name="Age" min="18" required />
+          </label>
+          <label>
+            Nationality
+            <input type="text" name="Nationality" required />
+          </label>
+          <label>
+            Location
+            <input type="text" name="Location" required />
+          </label>
+          <label>
+            Languages
+            <input type="text" name="Languages" placeholder="English, Chinese, Japanese" required />
+          </label>
+          <label>
+            Services offered
+            <textarea name="Services offered" rows="3" required></textarea>
+          </label>
+          <label>
+            Services prohibited
+            <textarea name="Services prohibited" rows="3"></textarea>
+          </label>
+          <label>
+            Preferred pricing
+            <input type="text" name="Preferred pricing" placeholder="$300 / hour" required />
+          </label>
+          <label>
+            Availability
+            <textarea name="Availability" rows="3" placeholder="Days and times you can accept bookings"></textarea>
+          </label>
+          <label>
+            Checklist
+            <select name="Checklist" required>
+              <option value="">Select</option>
+              <option>I agree to privacy guidelines</option>
+              <option>I have high-resolution photos ready</option>
+              <option>I can respond within 30 minutes</option>
+            </select>
+          </label>
+          <button class="button" type="submit">Submit profile details</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="contact-bar" aria-label="Contact options">
+    <a href="https://wechat.com" target="_blank" rel="noreferrer">WeChat</a>
+    <a href="https://wa.me/10000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+    <a href="https://line.me" target="_blank" rel="noreferrer">LINE</a>
+    <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+    <a href="tel:+10000000000">Mobile</a>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
