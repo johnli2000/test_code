@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>モデル登録 | 日本語</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand">Lumina Models</div>
+      <nav class="language-switcher" aria-label="言語">
+        <a href="../index.html">EN</a>
+        <a href="../index-zh.html">中文</a>
+        <a href="../index-ja.html">日本語</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">新規モデル登録フォーム</h1>
+      <div class="form-card">
+        <form action="mailto:admin@luminamodels.example" method="post" enctype="text/plain">
+          <label>
+            氏名
+            <input type="text" name="氏名" required />
+          </label>
+          <label>
+            年齢
+            <input type="number" name="年齢" min="18" required />
+          </label>
+          <label>
+            国籍
+            <input type="text" name="国籍" required />
+          </label>
+          <label>
+            活動エリア
+            <input type="text" name="活動エリア" required />
+          </label>
+          <label>
+            使用言語
+            <input type="text" name="使用言語" required />
+          </label>
+          <label>
+            提供できるサービス
+            <textarea name="提供できるサービス" rows="3" required></textarea>
+          </label>
+          <label>
+            提供不可のサービス
+            <textarea name="提供不可のサービス" rows="3"></textarea>
+          </label>
+          <label>
+            希望料金
+            <input type="text" name="希望料金" required />
+          </label>
+          <label>
+            受付可能な日時
+            <textarea name="受付可能な日時" rows="3"></textarea>
+          </label>
+          <label>
+            チェックリスト
+            <select name="チェックリスト" required>
+              <option value="">選択してください</option>
+              <option>プライバシーポリシーに同意</option>
+              <option>高解像度写真を準備済み</option>
+              <option>30分以内に返信可能</option>
+            </select>
+          </label>
+          <button class="button" type="submit">送信する</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="contact-bar" aria-label="連絡先">
+    <a href="https://wechat.com" target="_blank" rel="noreferrer">WeChat</a>
+    <a href="https://wa.me/10000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+    <a href="https://line.me" target="_blank" rel="noreferrer">LINE</a>
+    <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+    <a href="tel:+10000000000">電話</a>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>模特登记 | 中文</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand">Lumina Models</div>
+      <nav class="language-switcher" aria-label="语言">
+        <a href="../index.html">EN</a>
+        <a href="../index-zh.html">中文</a>
+        <a href="../index-ja.html">日本語</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">新模特资料填写</h1>
+      <div class="form-card">
+        <form action="mailto:admin@luminamodels.example" method="post" enctype="text/plain">
+          <label>
+            姓名
+            <input type="text" name="姓名" required />
+          </label>
+          <label>
+            年龄
+            <input type="number" name="年龄" min="18" required />
+          </label>
+          <label>
+            国籍
+            <input type="text" name="国籍" required />
+          </label>
+          <label>
+            所在城市
+            <input type="text" name="城市" required />
+          </label>
+          <label>
+            语言
+            <input type="text" name="语言" required />
+          </label>
+          <label>
+            可提供服务
+            <textarea name="可提供服务" rows="3" required></textarea>
+          </label>
+          <label>
+            禁止服务
+            <textarea name="禁止服务" rows="3"></textarea>
+          </label>
+          <label>
+            期望价格
+            <input type="text" name="期望价格" required />
+          </label>
+          <label>
+            可预约时间
+            <textarea name="可预约时间" rows="3"></textarea>
+          </label>
+          <label>
+            检查清单
+            <select name="检查清单" required>
+              <option value="">请选择</option>
+              <option>同意隐私条款</option>
+              <option>准备好高清照片</option>
+              <option>可在30分钟内回复</option>
+            </select>
+          </label>
+          <button class="button" type="submit">提交资料</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="contact-bar" aria-label="联系我们">
+    <a href="https://wechat.com" target="_blank" rel="noreferrer">微信</a>
+    <a href="https://wa.me/10000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+    <a href="https://line.me" target="_blank" rel="noreferrer">LINE</a>
+    <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+    <a href="tel:+10000000000">电话</a>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aria | Lumina Models</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="brand">Lumina Models</div>
+      <nav class="language-switcher" aria-label="Language">
+        <a href="../index.html">EN</a>
+        <a href="../index-zh.html">中文</a>
+        <a href="../index-ja.html">日本語</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div class="hero-card">
+        <h1>Aria</h1>
+        <p class="availability available">Available this week</p>
+        <p>Confident and refined, Aria is a perfect companion for fashion events, art previews, and executive dinners.</p>
+        <p><strong>Pricing:</strong> $350 / hour • $1,350 / evening</p>
+        <a class="button" href="#book">Book now</a>
+      </div>
+      <div class="hero-card">
+        <h2>Stats</h2>
+        <div class="stats">
+          <div class="stat"><strong>Height:</strong> 171 cm</div>
+          <div class="stat"><strong>Age:</strong> 26</div>
+          <div class="stat"><strong>Languages:</strong> EN, 日本語</div>
+          <div class="stat"><strong>Location:</strong> Harbor District</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Aria portrait" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Aria evening" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?auto=format&fit=crop&w=900&q=80" alt="Aria skyline" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Bio</h2>
+        <div class="card">
+          <p><strong>Personality:</strong> Poised, adventurous, and discreet.</p>
+          <p><strong>Background:</strong> Luxury retail consultant with global travel experience.</p>
+          <p><strong>Interests:</strong> Fashion week highlights, private tastings, and coastal escapes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="section">
+      <div class="container">
+        <h2 class="section-title">Book now</h2>
+        <div class="form-card">
+          <form data-booking-form action="mailto:admin@luminamodels.example" method="post" enctype="text/plain">
+            <label>
+              Model chosen
+              <input type="text" name="Model" value="Aria" required />
+            </label>
+            <label>
+              Preferred date & time
+              <input type="datetime-local" name="Preferred date and time" required />
+            </label>
+            <label>
+              Duration
+              <select name="Duration" required>
+                <option value="">Select duration</option>
+                <option>2 hours</option>
+                <option>4 hours</option>
+                <option>Evening</option>
+                <option>Overnight</option>
+              </select>
+            </label>
+            <label>
+              First name
+              <input type="text" name="First name" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="Phone" required />
+            </label>
+            <label>
+              Optional notes
+              <textarea name="Notes" rows="4" placeholder="Preferences, venue, special requests"></textarea>
+            </label>
+            <button class="button" type="submit">Send booking request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="contact-bar" aria-label="Contact options">
+    <a href="https://wechat.com" target="_blank" rel="noreferrer">WeChat</a>
+    <a href="https://wa.me/10000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+    <a href="https://line.me" target="_blank" rel="noreferrer">LINE</a>
+    <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+    <a href="tel:+10000000000">Mobile</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="notice">Admin email for bookings and onboarding: <strong>admin@luminamodels.example</strong></p>
+      <div class="hidden-links" aria-hidden="true">
+        <a href="../intake/en.html">Model intake English</a>
+        <a href="../intake/zh.html">Model intake 中文</a>
+        <a href="../intake/ja.html">Model intake 日本語</a>
+        <a href="../intake/ru.html">Model intake Русский</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
