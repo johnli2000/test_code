@@ -18,97 +18,7 @@
     </div>
   </header>
 
-  <main>
-    <section class="container hero">
-      <div class="hero-card">
-        <h1>Curated companions for premium experiences.</h1>
-        <p>Discover exclusive profiles, availability, and a seamless booking journey. Every model has a dedicated page with galleries, stats, and pricing.</p>
-        <a class="button" href="#models">Explore available models</a>
-      </div>
-      <div class="hero-card">
-        <h2>Quick booking</h2>
-        <p>Share your preferred date, time, and duration, and our team will confirm within minutes.</p>
-        <a class="button" href="models/sweety.html">View Sweety profile</a>
-      </div>
-    </section>
-
-    <section id="models" class="section">
-      <div class="container">
-        <h2 class="section-title">Model summary</h2>
-        <div class="controls">
-          <label class="toggle">
-            <input type="checkbox" data-availability-toggle />
-            Show only currently available
-          </label>
-        </div>
-        <div class="cards">
-          <article class="card" data-availability="available">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Sweety" loading="lazy" />
-            <div class="availability available">Available today</div>
-            <h3>Sweety</h3>
-            <p>Warm, playful, and elegant. Signature experience with cocktail bar tours and rooftop views.</p>
-            <p><strong>Pricing:</strong> From $320 / hour</p>
-            <button class="toggle" data-toggle-profile="profile-sweety">Show profile</button>
-            <div class="profile-details" id="profile-sweety">
-              <p><strong>Languages:</strong> English, Mandarin</p>
-              <p><strong>Location:</strong> Central City</p>
-              <p><strong>Highlights:</strong> Art galleries, fine dining, VIP events.</p>
-              <a class="button" href="models/sweety.html">View full profile</a>
-            </div>
-          </article>
-
-          <article class="card" data-availability="available">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Aria" loading="lazy" />
-            <div class="availability available">Available this week</div>
-            <h3>Aria</h3>
-            <p>Chic, confident, and adventurous. Ideal for luxury shopping and private events.</p>
-            <p><strong>Pricing:</strong> From $350 / hour</p>
-            <button class="toggle" data-toggle-profile="profile-aria">Show profile</button>
-            <div class="profile-details" id="profile-aria">
-              <p><strong>Languages:</strong> English, Japanese</p>
-              <p><strong>Location:</strong> Harbor District</p>
-              <p><strong>Highlights:</strong> Yacht dinners, cultural tours.</p>
-              <a class="button" href="models/aria.html">View full profile</a>
-            </div>
-          </article>
-
-          <article class="card" data-availability="unavailable">
-            <img src="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?auto=format&fit=crop&w=600&q=80" alt="Nova" loading="lazy" />
-            <div class="availability unavailable">Currently booked</div>
-            <h3>Nova</h3>
-            <p>Graceful and attentive. Specializes in gala evenings and corporate dinners.</p>
-            <p><strong>Pricing:</strong> From $300 / hour</p>
-            <button class="toggle" data-toggle-profile="profile-nova">Show profile</button>
-            <div class="profile-details" id="profile-nova">
-              <p><strong>Languages:</strong> English, Russian</p>
-              <p><strong>Location:</strong> Riverside</p>
-              <p><strong>Highlights:</strong> Opera nights, art previews.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Why Lumina</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Fast, clean galleries</h3>
-            <p>High-resolution photos delivered with lazy loading for an instant, smooth browsing experience.</p>
-          </div>
-          <div class="card">
-            <h3>Secure & discreet</h3>
-            <p>SSL-ready infrastructure and privacy-first workflows to keep every booking safe and confidential.</p>
-          </div>
-          <div class="card">
-            <h3>24/7 concierge</h3>
-            <p>Reach us via WeChat, WhatsApp, LINE, Telegram, or mobile phone from any page.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <main id="app"></main>
 
   <div class="contact-bar" aria-label="Contact options">
     <a href="https://wechat.com" target="_blank" rel="noreferrer">WeChat</a>
@@ -130,6 +40,8 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <script src="js/main.js"></script>
 </body>
 </html>
